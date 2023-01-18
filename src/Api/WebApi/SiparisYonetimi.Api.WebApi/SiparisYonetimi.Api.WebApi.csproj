@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\SiparisYonetimi.Common\SiparisYonetimi.Common.csproj" />
+    <ProjectReference Include="..\..\Core\SiparisYonetimi.Api.Application\SiparisYonetimi.Api.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\SiparisYonetimi.Infrastructure.Persistence\SiparisYonetimi.Infrastructure.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
